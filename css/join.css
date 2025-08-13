@@ -1,0 +1,72 @@
+.jointl-head{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+.jointl-head h1{
+    font-size: 4rem;
+    color: aliceblue;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+.jointl-head-bg{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(0,0,0,0.01), rgba(0,0,0,1)),url('../tifr.jpg');    
+}
+
+.jointl-content, .openings-content{
+    width: 70%;
+    min-height: 500px;
+    margin: auto;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    color:#64748b ;
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius:10px;
+    font-size: 1.2rem
+}
+.jointl-content a, .openings-content a{
+    color: #8895A8;
+    text-decoration: none;
+    cursor: pointer;
+}
+.openings-content{
+    min-height: 300px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.jointl-content h2, .openings-content h2{
+    color: #DDE0B8;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #F0F2D3;
+}
+/*Scroll to top button customization*/
+.scroll-content::after{
+    border: 5px solid #DDE0B8;
+    border-right: transparent;
+    border-bottom: transparent;
+}
+.scroll-arrow{
+    color: #DDE0B8;
+}
+.progress-ring-circle{
+    stroke:#DDE0B8;        
+}

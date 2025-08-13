@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Join the Lab | MS Lab | DBS | TIFR</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/join.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+    <script src="script.js"></script>
+    <script src="scroll-script.js"></script>
+    <script src="gallery-script.js"></script>
+</head>
+
+<body>
+    <!-- Desktop menu -->
+    <section class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="publication.html">Publication</a></li>
+            <li><a href=""><img src="lablogo.png" alt="Lab Logo"></a></li>
+            <li><a href="labmembers.html">Lab Members</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li class="active"><a href="">Join the lab</a></li>
+        </ul>
+    </section>
+    <!-- Mobile nav menu -->
+    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+    <section class="mobile-menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="publication.html">Publication</a></li>
+            <li><a href="labmembers.html">Lab Members</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li class="active"><a href="">Join the lab</a></li>
+        </ul>
+        <div class="nav-bg"></div>
+    </section>
+    <!-- JTL section -->
+    <section class="jointl-head">
+        <div class="jointl-head-bg"></div>
+        <h1>Join the lab</h1>
+    </section>
+    <section class="jointl-content">
+        <p>We are a dynamic and collaborative research team focused on understanding epithelial development. We are always looking for talented and motivated individuals to join our group. If you are passionate about development, cell biology, genetics or high-resolution confocal imaging to CRISPR-based genome editing, we encourage you to apply!</p>
+        <br>
+        <h2>Who Can Join</h2>
+        <ul>
+            <li>
+                <b>Integrated PhD/PhD Students:</b> For information on Integrated PhD/PhD positions or how to apply, please visit <a href="https://www.tifr.res.in/academics/index.php" target="_blank">TIFR Graduate Studies Page</a>.
+            </li>
+            <li>
+                <b>Postdoctoral Researchers:</b> Highly motivated and independent postdoctoral researchers are encouraged to apply. Please send your CV, cover letter, and the names of three references directly to <a href="mailto:mahendras@tifr.res.in">mahendras@tifr.res.in</a>.
+            </li>
+            <li>
+                <b>Project Interns:</b> We offer project internship opportunities for undergraduate and graduate students. Interested candidates should send their CV and a brief statement of interest to <a href="mailto:mahendras@tifr.res.in">mahendras@tifr.res.in</a>.
+            </li>
+        </ul>
+        <br>
+    </section>
+    <section class="openings-content">
+        <h2>Current Openings:</h2>
+
+        <p>Keep an eye on this page for announcements of open positions. We regularly update this section with new opportunities as they become available.</p>
+    </section>
+
+    <!-- Scroll to top button -->
+    <div class="scroll-to-top" title="Scroll to Top">
+        <svg class="progress-ring" width="54" height="54">
+            <circle class="progress-ring-circle" cx="27" cy="27" r="23" stroke-width="4" />
+        </svg>
+        <div class="scroll-content">
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <section class="footer">
+        <div class="footer-logo"><img src="lablogo.png"></div>
+        <div class="address">
+            <h3>Find us at</h3>
+            <p>
+                Lab B230<br>Department of Biological Sciences<br>Tata Institute of Fundamental Research<br>Homi Bhabha Road<br>Navy Nagar, Colaba<br>Mumbai 400005<br>
+            </p>
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="publication.html">Publication</a></li>
+                <li><a href="labmembers.html">Lab Members</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="jointhelab.html">Join the lab</a></li>
+            </ul>
+            <div class="logo-rest">
+                <a href="https://main.tifr.res.in/~dbs/index.html" target="_blank"><img src="DBS_logo_grey.svg"></a>
+                <a href="https://main.tifr.res.in" target="_blank"><img src="tifr-logo-grey.png"></a>
+            </div>
+        </div>
+    </section>
+    <div class="footnote">
+        <p>&#xa9; <span id="Year"></span> MS Lab | Site designed by <a href="https://x.com/SumitSen616/">Sumit</a></p>
+        <script>
+            const d = new Date();
+            let year = d.getFullYear();
+            document.getElementById("Year").innerHTML = year;
+        </script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Research | MS Lab | DBS | TIFR</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/research.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+    <!-- Remove duplicate Papa Parse -->
+    <script src="script.js"></script>
+    <script src="scroll-script.js"></script>
+</head>
+
+<body>
+    <!-- Desktop menu -->
+    <section class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="">Research</a></li>
+            <li><a href="publication.html">Publication</a></li>
+            <li><a href=""><img src="lablogo.png" alt="Lab Logo"></a></li>
+            <li><a href="labmembers.html">Lab Members</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="jointhelab.html">Join the lab</a></li>
+        </ul>
+    </section>
+    <!-- Mobile nav menu -->
+    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+    <section class="mobile-menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="">Research</a></li>
+            <li><a href="publication.html">Publication</a></li>
+            <li><a href="labmembers.html">Lab Members</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="jointhelab.html">Join the lab</a></li>
+        </ul>
+        <div class="nav-bg"></div>
+    </section>
+    <!-- Publication section -->
+    <section class="res-head">
+        <div class="res-head-bg"></div>
+        <h1>Research</h1>
+    </section>
+    <section class="research">
+
+        <div class="container">
+            <div class="tabs-header">
+                <div class="tab-button active-n" data-tab="tissue-homeostasis">Tissue Homeostasis</div>
+                <div class="tab-button" data-tab="cell-polarity">Cell Polarity</div>
+                <div class="tab-button" data-tab="actin-microridge">Actin Microridge</div>
+                <div class="tab-button" data-tab="developmental-metabolism">Developmental Metabolism</div>
+            </div>
+
+            <div class="tabs-content">
+                <!-- Tab 1: Tissue Homeostasis -->
+                <div id="tissue-homeostasis" class="tab-content active-n">
+                    <div class="content-inner">
+                        <div class="content-text">
+                            <h2>Tissue Homeostasis</h2>
+                            <p>
+                                A coordination between cell size/growth and cell number leads to proper development of a tissue. A disruption of this balance can cause severe developmental defects. In one such instance, we have found that myosin Vb (an actin based motor protein) regulates this balance to maintain a homeostasis in developmental embryonic epithelia of zebrafish. In <i>myovb/goosepimples</i> mutants, cell growth perturbation is compenstated by cell proliferation. Further, we discovered that membrane biogenesis is linked to cellular transport to achieve a homeostasic state of cell size. In addition, we are also interested in understanding the role of endocytosis in regulation of this homeostasis.
+                                <br><br>
+                                Epidermis being the outermost layer faces several kinds of stresses; whether it is shear stress or stretching stress, it still maintains the integrity. We are also trying to understand how the epidermis responds when it is stretched from internally. Using a novel in vivo technique to induce a stretch on embryonic epidermis of zebrafish, we are investigating the cellular behaviour in such stressed conditions. We have found out that the cells of the tissue initially respond by increasing the surface area; later on, which is handled by increasing the cell proliferation and subsisting from the stress. Molecularly, E-cadherin-based adhesion reinforcement and a balance between Ezrin and myosin mediated countering-forces are required to maintain a homeostasis during this stress. 
+                            </p>
+                        </div>
+                        <div class="content-media">
+                            <div>
+                            <img src="research/cell_size.png" alt="Cell size in myovb morphants">
+                            <span>Cell-rounding in <i>gsp</i> mutant embryos</span></div>
+                            <div>
+                            <img src="research/goosepimples.png" alt="goosepimple mutant phenotype">
+                            <span>goosepimples (<i>gsp</i>) mutant; (Sonal et al, 2014)</span></div>
+                            <div><img src="research/oil_injection_main.png" alt="goosepimple mutant phenotype">
+                            <span>Epidermal stretch paradigm for inducing tissue stress; (Lewis et al, 2020)</span></div>
+                        </div>
+                        <div class="content-pub">
+                            <h2>Related Publications</h2>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 2: Cell Polarity -->
+                <div id="cell-polarity" class="tab-content">
+                    <div class="content-inner">
+                        <div class="content-text">
+                            <h2>Cell Polarity</h2>
+                            <p>
+                                Epithelial cells, including those of the epidermis, exhibit polarity, a key feature for proper development. While the establishment of polarity is well-understood in single-layered epithelia, the process in stratified epithelia remains an active area of research. Our lab has made progress by identifying a stepwise mechanism for polarity establishment in bilayered epithelia of zebrafish embryos, which is regulated by cell-cell communication through adherens junctions. We are also exploring the role of the basement membrane in this process and its involvement in gut epithelium formation.
+                            </p>
+                        </div>
+                        <div class="content-media">
+                            <div>
+                            <img src="research/arora_et_al.png" alt="Mechanism of polarity establishemnt in bilayered epithelium">
+                                <span>Mechanism of polarity establishemnt in bilayered epithelium (Arora et al, 2020)</span>
+                            </div>
+                            <div>
+                                <img src="research/polarized_Ecad2.png" alt="Polarized distribution of Ecadherin in bilayered epithelia">
+                                <span>Polarized distribution of Ecadherin in bilayered epithelia (Arora et al, 2020)</span>
+                            </div>
+                        </div>
+                        <div class="content-pub">
+                            <h2>Related Publications</h2>
+                           
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 3: Actin Microridge -->
+                <div id="actin-microridge" class="tab-content">
+                    <div class="content-inner">
+                        <div class="content-text">
+                            <h2>Actin Microridge</h2>
+                            <p>
+                                Like several other epithelial cell, mucosal epithelia also have apical membrane projection called microridges. Unlike the other apical structures, the nature, function, and regulation are not understood well for microridges. We have shown that these labyrinth-like structures are made up off branched F-actin using electron tomography, which disproves bundled actin theory, proposed previously. We also have shown how the pattern of the microridges are regulated by aPKC, a polarity protein. Using neural networking approach we have shown the formation dynamics of the microridges. Further, we found that microridges are regulated by a crosstalk between cell metabolism, cell polarity and cell cytoskeleton signaling. We are currently trying to explore several other regulators of microridges in different physiological conditions.
+                            </p>
+                        </div>
+                        <div class="content-media">
+                            <div>
+                                <img src="research/microridge.gif" alt="microridge dynamics movie" style="width: 300px; max-height: 300px;">
+                                <span>Microridge dynamics</span>
+                            </div>
+                            <div>
+                                <img src="research/pinto_et_al.jpg" alt="microridge cross section EM" style="object-fit: cover">
+                                <span>Cryo-electron tomography image of microridge showing branched-actin network (Pinto et al, 2019)</span>
+                            </div>
+                        </div>
+                        <div class="content-pub">
+                            <h2>Related Publications</h2>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 4: Developmental Metabolism -->
+                <div id="developmental-metabolism" class="tab-content">
+                    <div class="content-inner">
+                        <div class="content-text">
+                            <h2>Developmental Metabolism</h2>
+                            <p>
+                                Nutrient metabolism provides the energy and building blocks necessary for the growth and differentiation of developing organisms. We are particularly interested in understanding how nutrient metabolism influences the development of the gut, the primary organ for nutrient absorption. Our research explores the effects of various diets and signaling pathways on gut development. We are also investigating the impact of maternal nutrient imbalances on the health and development of offspring. In collaboration with the ARUMDA consortium, we are dedicated to unraveling the complex mechanisms that contribute to the double burden of malnutrition in India.  
+                            </p>
+                        </div>
+<!--
+                        <div class="content-media">
+                            <div>
+                                <img src="" alt="">
+                                <span></span>
+                            </div>
+                        </div>
+-->
+                        <div class="content-pub">
+                            <h2>Related Publications</h2>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Scroll to top button-->
+    <div class="scroll-to-top" title="Scroll to Top">
+        <svg class="progress-ring" width="54" height="54">
+            <circle class="progress-ring-circle" cx="27" cy="27" r="23" stroke-width="4" />
+        </svg>
+        <div class="scroll-content">
+
+        </div>
+    </div>
+    <!-- Footer Section -->
+    <section class="footer">
+        <div class="footer-logo"><img src="lablogo.png"></div>
+        <div class="address">
+            <h3>Find us at</h3>
+            <p>
+                Lab B230<br>Department of Biological Sciences<br>Tata Institute of Fundamental Research<br>Homi Bhabha Road<br>Navy Nagar, Colaba<br>Mumbai 400005<br>
+            </p>
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="publication.html">Publication</a></li>
+                <li><a href="labmembers.html">Lab Members</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="jointhelab.html">Join the lab</a></li>
+            </ul>
+            <div class="logo-rest">
+                <a href="https://main.tifr.res.in/~dbs/index.html" target="_blank"><img src="DBS_logo_grey.svg"></a>
+                <a href="https://main.tifr.res.in" target="_blank"><img src="tifr-logo-grey.png"></a>
+            </div>
+        </div>
+    </section>
+    <div class="footnote">
+        <p>&#xa9; <span id="Year"></span> MS Lab | Site designed by <a href="https://x.com/SumitSen616/">Sumit</a></p>
+        <script>
+            const d = new Date();
+            let year = d.getFullYear();
+            document.getElementById("Year").innerHTML = year;
+        </script>
+    </div>
+</body>
+
+</html>

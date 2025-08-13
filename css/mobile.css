@@ -1,0 +1,325 @@
+/* Default menu styling stays same for desktop */
+
+/* Mobile styles */
+@media screen and (max-width: 600px) {
+    .menu {
+        display: none;
+    }
+
+    /*Mobile navigation menu*/
+    .hamburger {
+        background: none;
+        border: none;
+        font-size: 2em;
+        cursor: pointer;
+        z-index: 1000;
+        position: fixed;/ transition: transform 0.3s ease-in-out;
+        display: block;
+        right: 0;
+        margin: 5px;
+    }
+
+    .mobile-menu {
+        position: fixed;
+        top: -70%;
+        left: 0;
+        width: 100%;
+        height: 60%;
+        /*    background-color: #f8f8f8; */
+        transition: top 0.3s ease-in-out;
+        z-index: 999;
+        display: flex;
+        flex-direction: column;
+        padding-top: 0;
+        overflow-y: auto;
+    }
+
+    .nav-bg {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: rgba(10, 10, 10, 0.3);
+        z-index: 1;
+        backdrop-filter: blur(10px);
+    }
+
+    .mobile-menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        z-index: 10;
+        position: relative;
+        top: 20%;
+    }
+
+    .mobile-menu ul li {
+        padding: 15px 20px;
+        color: aliceblue;
+    }
+
+    .mobile-menu ul li:last-child {
+        border-bottom: none;
+    }
+
+    .mobile-menu ul li a {
+        text-decoration: none;
+        color: inherit;
+        font-size: 1.1em;
+        display: block;
+        text-align: right;
+    }
+
+    .mobile-menu ul li.active a {
+        color: deeppink;
+        font-weight: bold;
+    }
+
+    .mobile-menu.show {
+        top: 0;
+    }
+
+    .hamburger.open {
+        transform: rotate(90deg);
+
+    }
+
+    .mobile-menu li img {
+        height: 60px;
+        margin: 0 auto;
+    }
+
+    .active {
+        text-decoration: none
+    }
+
+    /*    Home page*/
+    .header,
+    .header-research {
+        flex-direction: column;
+        padding: 0;
+        position: relative;
+    }
+
+    .header-bg {
+        width: 100%;
+        height: 300px;
+        top: 15%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+    .header-research-bg{
+        width: 100%;
+        min-height: 250px;
+        position: relative;
+/*        height: 200px;*/
+        top: px;
+    }
+    .header-content,
+    .content {
+/*        position: relative;*/
+        width: 100%;
+/*        height: 70%;*/
+        margin: 0;
+        left: 0;
+        top: 0;
+        border-radius: 0;
+        background-color: rgba(10, 10, 10, 0.4)
+    }
+
+    .header-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .header-research-bg {
+        left: 0;
+        height: 100%;
+    }
+
+    .header-research {
+        height: 90%;
+    }
+
+    .content {
+        font-size: 1rem;
+        width: 80%;
+        margin: auto;
+    }
+
+    /*    Footer style*/
+    .footer {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .footer-logo {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer-logo img {
+        margin-top: 30px;
+        height: 100px;
+        width: 100px;
+        margin: auto;
+    }
+
+    .address {
+        text-align: center;
+    }
+
+    .links {
+        width: 100%;
+        border-top: 2px solid #333
+    }
+
+    .footer .links ul {
+        display: block;
+        border: none;
+        margin-bottom: 20px;
+        padding: 0;
+        margin: auto;
+    }
+
+    .footer .links ul li {
+        padding: 1%;
+    }
+    .links img{
+        padding: 5px;
+    }
+    /*Research Page mobile*/
+    .res-head{
+        height:  300px;
+    }
+    .container{
+        width: 95%;
+    }
+    .tabs-header {
+        display: flex;
+        flex-direction: column;
+        min-height:200px;
+    }
+
+    .tab-button {
+        border-bottom: 1px solid #e2e8f0;
+        padding: 10px;
+        width: 100%;
+        min-height: 30px;
+    }
+    .tab-button.active-n{
+        border: 2px solid #30FF76;
+        border-radius: 0 0 0 0;
+    }
+    .tab-button::after {
+        height: 1px;
+    }
+    .content-inner{
+        padding: 10px;
+    }
+    .content-text{
+        font-size: 1rem;
+    }
+    .content-media{
+        flex-direction: column;
+        height: auto;
+/*        width: 70%;*/
+        margin-bottom: 10px
+    }
+    .content-pub li:hover{
+        background: transparent;
+        font-weight: inherit
+    }
+    .content-media img{
+        max-height: 150px;
+        margin: auto;
+    }
+    /*    Publication page mobile*/
+    .pub-head{
+        height: 300px;
+    }
+    .pub-list-container {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .year-range {
+        font-size: 1.2em;
+    }
+
+    .pub-block li {
+        padding: 10px;
+    }
+
+    /*    Lab members page mobile*/
+    .memb-head {
+        height: 300px
+    }
+
+    .profile-container {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .profile-pic img {
+        width: 120px;
+        height: 120px;
+    }
+
+    /*    Gallery page mobile*/
+    .album .img {
+        max-width: 94%;
+        margin: 0 0 25px 0;
+    }
+
+    .album .responsive-container-block.img-cont {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .album .img.img-big {
+        max-width: 94%;
+        margin: 0 0 25px 0;
+    }
+
+    .album .img.img-last {
+        margin: 0 0 5px 0;
+    }
+
+    .album .gallery-caption {
+        opacity: 1
+    }
+/*    Join the lab page*/
+    .jointl-content, .openings-content{
+        font-size: 1rem;
+        width: 95%;
+    }
+}
+
+/*Tablet screen*/
+@media screen and (min-width:601px) and (max-width:1023px){
+    .footer .links ul{
+        display: block;
+    }
+    /*Gallery section*/
+        .album .img {
+        max-width: 32.5%;
+        margin: 0;
+    }
+    .album .responsive-container-block.bg {
+/*        flex-direction: column;*/
+    }
+    .album .responsive-container-block.img-cont {
+/*        max-width: 70%;*/
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .album .img.img-big {
+        max-width: 49%;
+        margin: 0;
+    }
+}

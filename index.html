@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> MS Lab | DBS | TIFR</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+    <!-- Remove duplicate Papa Parse -->
+    <script src="script.js"></script>
+    <script src="scroll-script.js"></script>
+</head>
+
+    <body>
+    <!-- Desktop menu -->
+    <section class="menu">
+        <ul>
+            <li class="active"><a href="">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="publication.html">Publication</a></li>
+            <li><a href=""><img src="lablogo.png" alt="Lab Logo"></a></li>
+            <li><a href="labmembers.html">Lab Members</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="jointhelab.html">Join the lab</a></li>
+        </ul>
+    </section>
+    <!-- Mobile nav menu -->
+    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+    <section class="mobile-menu">
+        <ul>
+            <li class="active"><a href="">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="publication.html">Publication</a></li>
+            <li><a href="labmembers.html">Lab Members</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="jointhelab.html">Join the lab</a></li>
+        </ul>
+        <div class="nav-bg"></div>
+    </section>
+        <section class="header">
+            <div class="header-bg"></div>
+            <div class="header-content">
+                <img class="logo" src="lablogo.png" />
+                <h1>Zebrafish Epithelial<br>Research Lab</h1>
+            </div>
+        </section>
+        <div id="break"></div>
+        <section class="header-research">
+
+            <div class="content">The precise mechanisms driving tissue sculpting during morphogenesis remain a central question in developmental biology. We use zebrafish to study how cells acquire specific shapes, sizes, and polarities to form complex tissues like the epidermis and alimentary canal. Our lab utilizes state-of-the-art genetic, genomic, and microscopy approaches, including CRISPR-Cas9 and super-resolution imaging, to dissect the cellular processes and interactions that establish and maintain epithelial architecture.
+                       <br>
+                <a href="research.html"><button>Our Research</button></a>
+            </div>
+            <div class="header-research-bg"></div>
+        </section>
+        <div id="break"></div>
+        <section class="publication">
+            <div class="pub-bg"></div>
+            <h2 id="heading">Selected Publication</h2>
+            <div id="publication-list-container"></div>
+        </section>
+        <!--Scroll to top button-->
+    <div class="scroll-to-top" title="Scroll to Top">
+        <svg class="progress-ring" width="54" height="54">
+            <circle class="progress-ring-circle" cx="27" cy="27" r="23" stroke-width="4" />
+        </svg>
+        <div class="scroll-content">
+
+        </div>
+    </div>
+<!--        Footer section-->
+ <section class="footer">
+        <div class="footer-logo"><img src="lablogo.png"></div>
+        <div class="address">
+            <h3>Find us at</h3>
+            <p>
+                Lab B230<br>Department of Biological Sciences<br>Tata Institute of Fundamental Research<br>Homi Bhabha Road<br>Navy Nagar, Colaba<br>Mumbai 400005<br>
+            </p>
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="publication.html">Publication</a></li>
+                <li><a href="labmembers.html">Lab Members</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="jointhelab.html">Join the lab</a></li>
+            </ul>
+            <div class="logo-rest">
+                <a href="https://main.tifr.res.in/~dbs/index.html" target="_blank"><img src="DBS_logo_grey.svg"></a>
+                <a href="https://main.tifr.res.in" target="_blank"><img src="tifr-logo-grey.png"></a>
+            </div>
+        </div>
+    </section>
+    <div class="footnote">
+        <p>&#xa9; <span id="Year"></span> MS Lab | Site designed by <a href="https://x.com/SumitSen616/">Sumit</a></p>
+        <script>
+            const d = new Date();
+            let year = d.getFullYear();
+            document.getElementById("Year").innerHTML = year;
+        </script>
+    </div>
+</body>
+
+</html>
