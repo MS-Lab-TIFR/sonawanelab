@@ -14,7 +14,7 @@ body {
     scroll-behavior: smooth;
     overflow-x: hidden;
     font-family: "Quicksand", sans-serif;
-    background: #000;
+    background: #040404;
 }
 
 .poiret-one-regular {
@@ -172,4 +172,5 @@ body {
     cx: 27;
     cy: 27;
     r: 23;
+
 }
