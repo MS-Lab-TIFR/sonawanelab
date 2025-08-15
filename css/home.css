@@ -19,7 +19,7 @@
     top: 10%;
     width: 50%;
     height: 100%;
-    background-image: url('../Background_home_left.jpg');
+    background-image: url('../Background_home_left.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
@@ -95,7 +95,7 @@
     top: 10%;
     width: 50%;
     height: 100%;
-    background-image: url('../Background_home_right.jpg');
+    background-image: url('../Background_home_right.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
@@ -232,3 +232,4 @@
 .progress-ring-circle{
     stroke:deeppink;        
 }
+
