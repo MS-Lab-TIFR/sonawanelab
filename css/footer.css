@@ -67,7 +67,7 @@
     height: 50%;
     margin: auto;
     border-bottom: 2px solid #333;
-    
+    justify-content:center;
 }
 .links ul li{
     padding: 3%;
@@ -97,4 +97,5 @@
 }
 .footnote p{
     margin: auto;
+
 }
