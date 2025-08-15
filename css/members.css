@@ -14,7 +14,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-image: linear-gradient(rgba(0,0,0,0.01), rgba(0,0,0,1)),url('../members.jpeg');
+    background-image: linear-gradient(rgba(0,0,0,0.01), rgba(10,10,10,1)),url('../members.jpeg');
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -141,3 +141,4 @@
     padding: 20px;
     color: aliceblue;
 }
+
