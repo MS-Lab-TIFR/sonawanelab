@@ -448,7 +448,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     pastProfileDiv.innerHTML = `
                         <span class="past-memb-name">${pastName}</span><br>
                         <span class="past-old-pos">Past Role: ${oldPos}</span><br>
-                        <span class="past-curr-pos">Currently a ${currPos}</span><br>
+                        <span class="past-curr-pos">${currPos}</span><br>
                     `;
                     pastProfileContainer.appendChild(pastProfileDiv);
                 }
@@ -570,4 +570,5 @@ document.addEventListener('DOMContentLoaded', () => {
                 activeContent.classList.add('active-n');
             }
         });
+
     });
