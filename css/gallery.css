@@ -100,7 +100,18 @@
     opacity: 1;
     transform: translateY(-5px);
 }
-
+/*Scroll to top button customization*/
+.scroll-content::after{
+    border: 5px solid linear-gradient(90deg,rgba(232, 250, 255, 1) 0%, rgba(199, 165, 87, 1) 50%, rgba(83, 232, 237, 1) 100%);
+    border-right: transparent;
+    border-bottom: transparent;
+}
+.scroll-arrow{
+    color: linear-gradient(90deg,rgba(232, 250, 255, 1) 0%, rgba(199, 165, 87, 1) 50%, rgba(83, 232, 237, 1) 100%);
+}
+.progress-ring-circle{
+    stroke:linear-gradient(90deg,rgba(232, 250, 255, 1) 0%, rgba(199, 165, 87, 1) 50%, rgba(83, 232, 237, 1) 100%);        
+}
 @media (max-width: 1024px) {
     .album .img {
         margin: 0 0 18px 0;
@@ -113,5 +124,6 @@
 @media (max-width: 768px) {
 
 }
+
 
 
