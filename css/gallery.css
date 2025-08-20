@@ -102,15 +102,15 @@
 }
 /*Scroll to top button customization*/
 .scroll-content::after{
-    border: 5px solid linear-gradient(90deg,rgba(232, 250, 255, 1) 0%, rgba(199, 165, 87, 1) 50%, rgba(83, 232, 237, 1) 100%);
+    border: 5px solid #9579B5;
     border-right: transparent;
     border-bottom: transparent;
 }
 .scroll-arrow{
-    color: linear-gradient(90deg,rgba(232, 250, 255, 1) 0%, rgba(199, 165, 87, 1) 50%, rgba(83, 232, 237, 1) 100%);
+    color: #9579B5;
 }
 .progress-ring-circle{
-    stroke:linear-gradient(90deg,rgba(232, 250, 255, 1) 0%, rgba(199, 165, 87, 1) 50%, rgba(83, 232, 237, 1) 100%);        
+    stroke:#9579B5;        
 }
 @media (max-width: 1024px) {
     .album .img {
@@ -124,6 +124,7 @@
 @media (max-width: 768px) {
 
 }
+
 
 
 
